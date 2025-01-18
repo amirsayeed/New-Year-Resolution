@@ -62,3 +62,76 @@
     gap: 10px;
     border: 1px solid beige;
 }
+
+main {
+    max-width: 1280px;
+}
+
+.failure-list-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.failure-list-container img {
+    width: 100%;
+}
+
+.failure {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.failure-title {
+    color: rgb(21, 20, 20);
+    font-family: Work Sans;
+    font-size: 40px;
+    font-weight: 700;
+    line-height: 47px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.failure-text {
+    color: rgb(68, 67, 67);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.failure ul {
+    list-style: none;
+    padding: 0
+}
+
+.failure>ul>li {
+    position: relative;
+    padding-left: 25px;
+    color: rgb(68, 67, 67);
+    font-family: Work Sans;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0%;
+    text-align: left;
+}
+
+.failure ul li::before {
+    content: "\2713";
+    position: absolute;
+    left: 0;
+    color: green;
+    font-size: 16px;
+}
+
+.plan-container {
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
