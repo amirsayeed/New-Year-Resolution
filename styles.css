@@ -39,15 +39,15 @@
     font-size: 20px;
     font-weight: 600;
     border-radius: 5px;
-    width: 160px;
-    height: 64px;
+    max-width: 160px;
+    max-height: 64px;
 }
 
 .banner-container {
     background-image: url('./images/banner/banner3.png');
     background-repeat: no-repeat;
     background-position: center;
-    height: 800px;
+    height: 100vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -247,10 +247,53 @@ main {
 }
 
 input[type='email'] {
-    width: 325px;
+    max-width: 325px;
     max-height: 64px;
-    padding: 10px 5px;
+    padding: 10px 15px;
     background: black;
     border: none;
     outline: none;
+}
+
+@media screen and (max-width: 576px) {
+
+    /* .banner-container {
+        flex-direction: column;
+        flex: 1;
+        flex-wrap: wrap;
+    } */
+    .failure-list-container,
+    .plan-container,
+    .footer-container {
+        flex-direction: column;
+    }
+
+    .banner-container,
+    .positive-mindset-container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        max-height: 300px;
+        margin: 50px 0;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .banner-container {
+        max-height: 450px;
+    }
+
+    .banner-des {
+        margin: 10px;
+        max-height: 300px;
+        padding: 10px;
+    }
+
+    .banner-title {
+        font-size: 25px;
+    }
+
+    br {
+        display: none;
+    }
 }
